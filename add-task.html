@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/add-edit/add-task.css">
+    <title>Add Task</title>
+</head>
+<body>
+    <header>
+        <div class="add-task">
+            <p class="add-task__title">ADD TASK</p>
+            <img src="/images/exit.svg" alt="exit" class="add-task__exit"></img>
+        </div>
+    </header>
+    <main>
+        <article>
+        <div class="icon">
+            <img src="/images/add-icon.jpg" alt="add-icon" class="icon__image"></img>
+        </div>
+        <div class="title">
+            <label for="title__value">Title</label><br>
+            <input type="text" placeholder="Value" id="title__value">
+        </div>
+        <div class="description">
+            <label for="description__value">Description (optional)</label><br>
+            <textarea placeholder="Value" id="description__value"></textarea>
+        </div>
+        <div class="due">
+            <label for="due__value">Due date</label><br>
+            <input type="text" placeholder="Value" id="due__value">
+        </div>
+        <div class="confirm">
+                <button class="confirm-disabled__btn"></button>
+                <a href="home.html">
+                    <button class="confirm-enabled__btn"></button>
+                </a>
+                <a href="home.html">
+                <button class="confirm-cancel__btn"></button>
+                </a>
+            </div>
+        </div>
+
+        </article>
+    </main>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>

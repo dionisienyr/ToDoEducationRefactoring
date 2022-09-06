@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/home/home.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+        <img src="/images/logo.svg" alt="logo">
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="info">
+                <div class="info-total">
+                    <p class="info-quantity"></p>
+                    <p class="info-title">TO DO</p>
+                </div>
+                <div class="info-container">
+                    <p class="info-container__item">VIEW ALL</p>
+                </div>
+            </div>
+            <section>
+                <div class="menu">
+                    <div class="menu-container__main">
+                    <input type="checkbox" name="complete" class="menu-invisible__checkbox">
+                    <p class="menu__due">Due</p>
+                    </div>
+                    <div class="menu-container__side">
+                    <p class="menu__text">Task</p>
+                </div>
+                </div>
+
+                <div class="menu">
+                    <div class="menu-container__main">
+                    <input type="checkbox" name="complete" class="menu-invisible__checkbox">
+                    <p class="menu__due">Date <span class="alert">alert</span></p>
+                    </div>
+                    <div class="menu-container__side">
+                    <p class="menu__text">Item title</p>
+                </div>
+                </div>
+
+                <div class="wrapper">
+
+                    <ul class="wrapper-list">
+                        <li class="wrapper__item">
+                            <div class="menu-task">
+                                <div class="menu-task-container__main">
+                                    <input type="checkbox" name="complete" class="menu-task__checkbox" checked>
+                                    <p class="menu-task__due">6 May 2022</p>
+                                    </div>
+                                    <div class="menu-task-container__side">
+                                    <p class="menu-task__text">Example complete item goes here</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="wrapper__item">
+                            <div class="menu-task">
+                                <div class="menu-task-container__main">
+                                    <input type="checkbox" name="complete" class="menu-task__checkbox">
+                                    <p class="menu-task__due">22 Feb 2022</p>
+                                </div>
+                                <div class="menu-task-container__side">
+                                    <p class="menu-task__text">Example complete item goes here</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+            <div class="load-more">
+                <button name="button" class="load-more__btn">Load more...</button>
+                <button name="button" class="delete__btn" data-path="modal-window__delete">Delete</button>
+            </div>
+            <div class="modal-window">
+                <div class="modal-overlay">
+                    <div class="modal" data-target="modal-window__delete">
+                        <div class="delete-item">
+                        <p class="delete-title">Delete?</p>
+                    </div>
+                    <div class="delete-item">
+                        <button id="delete-accept__btn" class="delete-accept__btn">ACCEPT</button>
+                        <button class="delete-cancel__btn">CANCEL</button>
+                    </div>
+                </div>
+                </div>
+            </div>    
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="add-item">
+            <a href="add-task.html">
+        <button class="add-item__btn">
+        <img src="/images/add-item.svg" alt="add-item">
+        </button>
+    </a>
+    </div>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/home.js"></script>    
+</body>
+
+</html>

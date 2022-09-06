@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    font-family: 'Quicksand';
+    height: 100%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+p, input{
+    margin: 0;
+}
+
+button{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background-color: white;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-task{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-top: 20px;
+    margin-right: 29px;
+    margin-bottom: 20px;
+
+    &__title{
+        color: #1AB8DB;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+label{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+input{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    min-width: 318px;
+}
+
+textarea{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    min-width: 318px;
+}
+.icon{
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.title,.description{
+    margin-bottom: 24px;
+}
+.due{
+        margin-bottom: 52px;
+}
+.confirm{
+    display: flex;
+    justify-content: space-around;
+
+
+    &-disabled__btn{
+        background-image: url("/images/add-disabled.jpg");
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+        margin-right: 13px;
+    }
+
+    &-enabled__btn{
+        background-image: url("/images/add-enabled.jpg");
+        width: 99px;
+        height: 40px;
+        cursor: pointer;
+        margin-right: 13px;
+    }
+
+    &-cancel__btn{
+        background-image: url("/images/cancel.jpg");
+        width: 94px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+}

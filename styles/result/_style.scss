@@ -1,0 +1,42 @@
+body{
+    margin: 24px;
+    font-family: 'Quicksand';
+    height: 100%;
+
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+p, input{
+    margin: 0;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls-container{
+    text-align: end;
+    width: 100%;
+    color: #1AB8DB;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.icon{
+    margin-bottom: 16px;
+}
+
+.signature{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
